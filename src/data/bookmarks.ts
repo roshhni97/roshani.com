@@ -9,18 +9,18 @@ export interface Raindrop {
 }
 
 export const fetchBookmarks = async (page = 0): Promise<Raindrop[]> => {
-  const req = await fetch(
-    `https://api.raindrop.io/rest/v1/raindrops/0?search=%23portfolio&perpage=50&page=${page}`,
-    {
-      headers: {
-        Authorization: `Bearer ${serverEnv.RAINDROP_TOKEN}`,
-      },
-    }
-  )
+  // const req = await fetch(
+  //   `https://api.raindrop.io/rest/v1/raindrops/0?search=%23portfolio&perpage=50&page=${page}`,
+  //   {
+  //     headers: {
+  //       // Authorization: `Bearer ${serverEnv.RAINDROP_TOKEN}`,
+  //     },
+  //   }
+  // )
 
-  const data = await req.json()
+  const data = [] as Raindrop[] //await req.json()
 
-  return data?.items.map((item: Raindrop) => ({
+  return data?.map((item: Raindrop) => ({
     _id: item._id,
     title: item.title,
     link: item.link,
