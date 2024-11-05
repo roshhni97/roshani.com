@@ -8,21 +8,24 @@ import {
   SiStripe,
   SiTailwindcss,
 } from 'react-icons/si'
-import HypzzImage from '@public/img/projects/hypzz.png'
-import KalabamImage from '@public/img/projects/kalabam.png'
-import WhyPigeonsImage from '@public/img/projects/why-pigeons-full.png'
+// import HypzzImage from '@public/img/projects/hypzz.png'
+// import KalabamImage from '@public/img/projects/kalabam.png'
+// import WhyPigeonsImage from '@public/img/projects/why-pigeons-full.png'
+import TrendifyImage from '@public/img/projects/trandify.png'
+import HealthPlusImage from '@public/img/projects/health-plus.png'
+import EvSearchImage from '@public/img/projects/evsearch.png'
 import type { Project } from '@utils/types'
 
 export const projects: Project[] = [
   {
     id: '1',
-    title: 'Hypzz',
+    title: 'Trendify',
     description: {
-      en: 'Connecting influencers and brands to collaborate on product advertisements and more.',
+      en: 'A web application that automated, real-time dashboard monitoring and anomaly detection. This significantly enhances data oversight and reduces manual monitoring efforts.',
       fr: 'Nous connectons des influenceurs et des marques pour collaborer sur des publicités de produits et plus encore.',
     },
-    image: { src: HypzzImage },
-    homepage: 'https://hypzz.chr-ge.com/?ref=chr-ge.com',
+    image: { src: TrendifyImage },
+    homepage: 'https://www.trendifyapp.tech/',
     technologies: [
       { name: 'Next.js', icon: SiNextdotjs, color: '#000000' },
       { name: 'React', icon: SiReact, color: '#61DAFB' },
@@ -38,14 +41,14 @@ export const projects: Project[] = [
   },
   {
     id: '2',
-    title: 'Kalabam',
+    title: 'Health Plus',
     description: {
-      en: 'Create multiplayer quizzes for class activities or interactive presentations.',
+      en: 'Developed a webapp for enhancing Healthcare Data Access and Transparency through Integrated Case Management with PHR and Role-Based Access.',
       fr: 'Créez des quiz multijoueurs pour les activités en classe ou des présentations interactives.',
     },
-    image: { src: KalabamImage },
-    homepage: 'https://kalabam.com/?ref=chr-ge.com',
-    github: 'https://github.com/chr-ge/kalabam',
+    image: { src: HealthPlusImage },
+    homepage: 'https://healthplus-frontend-sw4d.vercel.app/',
+    github: 'https://github.com/roshhni97/healthplus-frontend',
     technologies: [
       { name: 'Next.js', icon: SiNextdotjs, color: '#000000' },
       { name: 'React', icon: SiReact, color: '#61DAFB' },
@@ -62,13 +65,14 @@ export const projects: Project[] = [
   },
   {
     id: '3',
-    title: 'Why Pigeons',
+    title: 'EV Search',
     description: {
-      en: 'Quick food delivery right to your door. User, restaurant, driver, and admin dashboards are fully functional.',
+      en: "A one-stop solution to all your EV Charging problems. It will significantly impact users' time and effort. Instead of finding EV stations and empty slots physically, You can now explore various stations, compare prices and book slots from home.",
       fr: 'Livraison rapide de plats directement à votre porte. Les tableaux de bord des utilisateurs, des restaurants, des chauffeurs et des administrateurs sont entièrement fonctionnels.',
     },
-    image: { src: WhyPigeonsImage },
-    github: 'https://github.com/chr-ge/why-pigeons',
+    image: { src: EvSearchImage },
+    homepage: 'https://evian.netlify.app/',
+    github: 'https://github.com/roshhni97/EVSearch',
     technologies: [
       { name: 'Laravel', icon: SiLaravel, color: '#FF2D20' },
       { name: 'React', icon: SiReact, color: '#61DAFB' },
@@ -80,6 +84,6 @@ export const projects: Project[] = [
       { label: 'e-commerce', colorScheme: 'purple' },
       { label: 'website', colorScheme: 'cyan' },
     ],
-    isShowcased: false,
+    isShowcased: true,
   },
 ]

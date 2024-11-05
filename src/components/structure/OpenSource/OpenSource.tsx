@@ -14,6 +14,7 @@ export const OpenSource: React.FC = () => {
       borderColor='black'
       borderTop='1px solid'
       spacing='16'
+      id='experience'
     >
       <Box
         px={{ base: '4', md: '8' }}
@@ -28,11 +29,11 @@ export const OpenSource: React.FC = () => {
           size='2xl'
           wordBreak={{ base: 'break-all', sm: 'break-word' }}
         >
-          {t('open-source')}
+          {t('experience')}
         </Heading>
       </Box>
       <SimpleGrid
-        columns={{ base: 1, md: 2, xl: 3 }}
+        columns={{ base: 1, md: 2, xl: 2 }}
         px={{ base: '4', md: '8' }}
         spacing='16'
       >

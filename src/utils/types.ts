@@ -12,7 +12,11 @@ export interface Tag {
 }
 
 export interface RoleType {
-  label: 'creator' | 'contributor'
+  label:
+    | 'Software Engineer'
+    | 'Full Stack Developer'
+    | 'Frontend Developer'
+    | 'Backend Developer'
   color: string
 }
 

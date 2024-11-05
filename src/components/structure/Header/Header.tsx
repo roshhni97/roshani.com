@@ -51,9 +51,9 @@ export const Header: React.FC = () => {
           </Text>
         </NextLink>
         <HStack spacing='2'>
-          <Button variant='icon' size='icon' onClick={toggleLocale}>
+          {/* <Button variant='icon' size='icon' onClick={toggleLocale}>
             {locale === 'en' ? 'FR' : 'EN'}
-          </Button>
+          </Button> */}
           <IconButton
             aria-label={t(isOpen ? 'close-menu' : 'open-menu')}
             icon={isOpen ? <VscChromeClose /> : <HiOutlineMenuAlt4 />}

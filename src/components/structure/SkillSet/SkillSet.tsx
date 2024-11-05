@@ -35,7 +35,7 @@ export const SkillSet: React.FC = () => {
         {t('skills-heading')}
       </Heading>
       <MotionSimpleGrid
-        columns={[1, null, 2, 3]}
+        columns={[1, null, 2, 2]}
         spacing='12'
         variants={container}
         initial='hidden'

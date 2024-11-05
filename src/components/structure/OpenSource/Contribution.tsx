@@ -10,6 +10,7 @@ import {
   Text,
 } from '@chakra-ui/react'
 import type { RoleType, Skill } from '@utils/types'
+import { VscArrowRight, VscArrowUp } from 'react-icons/vsc'
 import { config } from '@config/config'
 
 export interface ContributionProps {
@@ -17,7 +18,7 @@ export interface ContributionProps {
   repository: string
   role: RoleType
   githubUrl: string
-  description: { en: string; fr: string }
+  description: any
   topics: string[]
   language: Skill
 }
@@ -53,10 +54,22 @@ export const Contribution: React.FC<ContributionProps> = ({
           </Text>
         </HStack>
         <Flex mt='2' mb='4'>
-          <Badge colorScheme={role.color}>{t(role.label)}</Badge>
+          <Badge colorScheme={role.color}>{role.label}</Badge>
         </Flex>
         <Text flex='1' mb='4'>
-          {description[i18n.language as keyof typeof description]}
+          {description.map((desc: string) => {
+            return (
+              <>
+                <div style={{ display: 'flex', gap: '12px' }}>
+                  <div>
+                    <VscArrowRight style={{ marginTop: '4px' }} />
+                  </div>
+                  <div>{desc}</div>
+                </div>
+              </>
+            )
+          })}
+          {/* {description[i18n.language as keyof typeof description]} */}
         </Text>
         <Flex justify='space-between'>
           <HStack>

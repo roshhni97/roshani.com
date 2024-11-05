@@ -7,7 +7,7 @@ const links: { name: string; href: string }[] = [
   { name: 'Email', href: config.email_link },
   { name: 'Github', href: config.github },
   { name: 'LinkedIn', href: config.linkedin },
-  { name: 'PGP/GPG Key', href: '/gpg.txt' },
+  // { name: 'PGP/GPG Key', href: '/gpg.txt' },
 ]
 
 export const Footer: React.FC = () => {
@@ -32,9 +32,9 @@ export const Footer: React.FC = () => {
         mb={{ base: '16', md: 0 }}
       >
         <Text casing='uppercase'>{config.copyright}</Text>
-        <Text casing='uppercase' cursor='url(/img/maple-leaf.png), text'>
+        {/* <Text casing='uppercase' cursor='url(/img/maple-leaf.png), text'>
           {t('made-in-mtl')}
-        </Text>
+        </Text> */}
       </Stack>
       <Stack
         direction={{ base: 'column', md: 'row' }}
