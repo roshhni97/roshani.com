@@ -16,7 +16,7 @@ class Document extends NextDocument {
             <script
               defer
               src='https://static.cloudflareinsights.com/beacon.min.js'
-              data-cf-beacon={`{"token": "${env.NEXT_PUBLIC_CLOUDFLARE_TOKEN}"}`}
+              // data-cf-beacon={`{"token": "${env.NEXT_PUBLIC_CLOUDFLARE_TOKEN}"}`}
             />
           )}
         </body>

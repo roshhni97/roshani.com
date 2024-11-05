@@ -42,13 +42,13 @@ export const ContactMe: React.FC = () => {
 
   const onSubmit = handleSubmit(async (data) => {
     try {
-      await fetch(env.NEXT_PUBLIC_FORMSPREE_URL, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
-      })
+      // await fetch(env.NEXT_PUBLIC_FORMSPREE_URL, {
+      //   method: 'POST',
+      //   headers: {
+      //     'Content-Type': 'application/json',
+      //   },
+      //   body: JSON.stringify(data),
+      // })
 
       posthog.capture('Contact Form Submitted Successfully', {
         email: data.email,

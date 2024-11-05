@@ -17,13 +17,13 @@ import 'focus-visible/dist/focus-visible'
 import '@fontsource-variable/manrope'
 
 if (typeof window !== 'undefined') {
-  posthog.init(env.NEXT_PUBLIC_POSTHOG_KEY, {
-    api_host: '/ingest',
-    person_profiles: 'identified_only',
-    loaded: (posthog) => {
-      if (config.isDev) posthog.debug() // debug mode in development
-    },
-  })
+  // posthog.init(env.NEXT_PUBLIC_POSTHOG_KEY, {
+  //   api_host: '/ingest',
+  //   person_profiles: 'identified_only',
+  //   loaded: (posthog) => {
+  //     if (config.isDev) posthog.debug() // debug mode in development
+  //   },
+  // })
 }
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
